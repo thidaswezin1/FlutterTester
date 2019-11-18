@@ -25,6 +25,7 @@ dependencies:
   shared_preferences: ^0.5.4+5
   sqflite: ^1.1.7+1
   path_provider: '>=0.3.0'
+  flutter_launcher_icons : ^0.7.4
 
 
   # The following adds the Cupertino Icons font to your application.
@@ -34,6 +35,11 @@ dependencies:
 dev_dependencies:
   flutter_test:
     sdk: flutter
+
+flutter_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/images/icon.png"
 
 
 # For information on the generic Dart part of this file, see the
