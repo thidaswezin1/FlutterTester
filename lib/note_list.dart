@@ -50,7 +50,7 @@ class NoteListState extends State<NoteList>{
         title:  Text("All Notes"),
       ),
       body: Container(
-        color: Colors.cyan,
+        color: Colors.amberAccent,
         padding: EdgeInsets.all(8),
         child: FutureBuilder<List<Notes>>(
           future: selectNotesFromDatabase(),

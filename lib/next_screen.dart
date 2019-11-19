@@ -3,6 +3,7 @@ import 'package:geolocator/geolocator.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
 import 'package:myfirstflutterapp/note_list.dart';
+import 'package:myfirstflutterapp/worktype.dart';
 
 final List<String> notes=List<String>();
 
@@ -96,6 +97,15 @@ class FirstScreen extends StatelessWidget {
               onPressed: (){
                   Navigator.push(context,MaterialPageRoute(builder: (context)=>NoteList()));
               },
+            ),),
+            Padding(padding: EdgeInsets.only(left: 20,top: 30,right: 20),
+            child: RaisedButton(
+              color: Colors.blueGrey,
+              child: Text("Find Job"),
+              textColor: Colors.white,
+              onPressed: (){
+                  Navigator.push(context, MaterialPageRoute(builder: (context)=>WorkType()));
+            }
             ),)
 
          ]
