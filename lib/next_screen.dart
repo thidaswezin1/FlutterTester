@@ -3,8 +3,6 @@ import 'package:geolocator/geolocator.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
 import 'package:myfirstflutterapp/note_list.dart';
-import 'package:sqflite/sqflite.dart';
-import 'package:path/path.dart';
 
 final List<String> notes=List<String>();
 
@@ -29,7 +27,7 @@ class FirstScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('First Screen'),
+        title: Text('Main Screen'),
       ),
       body: Center(
         child: Column(

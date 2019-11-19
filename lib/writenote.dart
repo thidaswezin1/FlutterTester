@@ -15,9 +15,15 @@ class WriteNoteState extends State<WriteNote> {
   String title;
   String note1;
 
+  Future<bool> _onWillPop(){
+    return Future.value(false);
+  }
+
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return WillPopScope(
+      onWillPop: _onWillPop,
+      child: Scaffold(
       key: scaffoldKey,
       appBar: new AppBar(
           title: new Text('Add Note'),
@@ -79,7 +85,7 @@ class WriteNoteState extends State<WriteNote> {
         ),
         )
       ),
-    );
+      ));
   }
   void _save() {
     if (this.formKey.currentState.validate()) {
