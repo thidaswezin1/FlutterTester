@@ -1,6 +1,6 @@
 # myfirstflutterapp
 
-A new Flutter application.
+A new Flutter application (location,Google Map, Note Taker).
 
 ## Getting Started
 
